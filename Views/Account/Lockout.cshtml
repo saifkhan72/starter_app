@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Locked Out</title>
+    <!-- Bootstrap CSS -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="e:\my-projects\starter_app\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="container text-center">
+        <div class="card shadow-lg p-4">
+            <div class="card-body">
+                <h1 class="text-danger display-4 mb-3">Account Locked</h1>
+                <p class="lead text-muted">Your account has been temporarily locked due to multiple failed login attempts.</p>
+                <hr class="my-4">
+                <p class="mb-4">For assistance, please contact support or wait 24 hours to try again.</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="/contact-support" class="btn btn-primary btn-lg">Contact Support</a>
+                    <a asp-action="LogIn" asp-controller="Account" class="btn btn-secondary btn-lg">Go to Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
